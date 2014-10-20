@@ -153,7 +153,7 @@ if __name__ == "__main__":
 			posts = v
 	
 	# Connecting to database server
-	conn = pymysql.connect(host='db-srv.cla.umn.edu', user='username', passwd='password', db='db_name', use_unicode=True, charset='utf8')
+	conn = pymysql.connect(host='db_hostname', user='username', passwd='password', db='db_name', use_unicode=True, charset='utf8')
 	cur = conn.cursor()
 
 	# Initializing values to be inserted in page info table
